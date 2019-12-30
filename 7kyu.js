@@ -45,8 +45,4 @@ function vertMirror(strng) {
       let newnew = newArr.join("\n")
       console.log(newnew)
       return newnew
-      
-      
-  //     if(fct == "vertMirro")
-  //       vertMirror(s)
   }
