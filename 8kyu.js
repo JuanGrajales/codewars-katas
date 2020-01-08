@@ -38,3 +38,10 @@ function getDivisorsCnt(n){
   
   return sum;
 }
+
+/**
+ * Christmas tree
+ * https://www.codewars.com/kata/52755006cc238fcae70000ed/train/javascript 
+ */
+function christmasTree(height) {
+}
