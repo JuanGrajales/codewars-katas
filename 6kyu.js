@@ -81,7 +81,7 @@ function christmasTree(height) {
   let str = "*";
   let arr = [];
   
-  let base = (height*2)-1; // base length
+  let base = (height*2)-1;
   let initial = (base/2)+1;
   
   
