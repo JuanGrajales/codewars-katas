@@ -80,17 +80,23 @@ function christmasTree(height) {
   let justOne = "*"
   let str = "*";
   let arr = [];
+  let empty = ""
   
-  let base = (height*2)-1;
+  let base = (height*2)-1; // base length
   let initial = (base/2)+1;
   
   
   for(let i = 1; i <= height; i++){
-    console.log(str.padStart(initial))
-    arr.push(str.padStart(initial))
-    initial += 1;
-    str += justOne;
-    str += justOne;
+    console.log(str.padStart(initial) + "".padEnd(initial, " "))
+    if(i+1 > height){
+      arr.push(str.padStart(initial))
+    }
+    else{
+      arr.push(str.padStart(initial) + "".padEnd((initial-str.length), " "))
+      initial += 1;
+      str += justOne;
+      str += justOne;
+    }
   }
   
   return arr.join('\n')
