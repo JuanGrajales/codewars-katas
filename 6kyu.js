@@ -3,38 +3,25 @@
  * https://www.codewars.com/kata/5a959662373c2e761d000183/train/javascript
  */
 const ticker = (text, width, tick) => {
-  
-  let shortenText = "";
-  let textWithPadding;
-  
+  // width has empty string   
   if(tick === 0){
     return "".padStart(width, " ");
   }
-  
+  // width has partial/complete string with/without padding at the start
   else if(tick <= width){  
     text = text.substring(0, tick);
     return text.padStart(width, " ");
   }
-  
-  
-  
   else if(tick > width){  
-    if(tick <= text.length){
-      text = text.substring(tick-width, tick);
+    // width has partial string with padding at the end or empty string
+    if(tick-width <= text.length){
+      text = text.substring(tick-width, text.length);
+      return text.padEnd(width, " ");
+    }
+    // width has empty string
+    else if(tick-width > text.length){
+      text = text.substring(0, tick-width-text.length);
       return text.padStart(width, " ");
-    }
-    
-    
-    
-    
-    else if(tick > text.length && tick-text.length <= width){
-      text = text.padEnd(tick-text.length, " ")
-      text = text.substring(tick, tick);
-      return shortenText.padStart(width, " ");
-    }
-    else if(tick <= text.length){
-      shortenText = text.substring(tick-width, tick);
-      return shortenText.padStart(width, " ");
     }
   } 
 }
