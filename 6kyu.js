@@ -71,3 +71,27 @@ function catMouse(x, j){
     return "boring without all three";
   }
 }
+
+/**
+ * Christmas tree
+ * https://www.codewars.com/kata/52755006cc238fcae70000ed/train/javascript 
+ */
+function christmasTree(height) {
+  let justOne = "*"
+  let str = "*";
+  let arr = [];
+  
+  let base = (height*2)-1; // base length
+  let initial = (base/2)+1;
+  
+  
+  for(let i = 1; i <= height; i++){
+    console.log(str.padStart(initial))
+    arr.push(str.padStart(initial))
+    initial += 1;
+    str += justOne;
+    str += justOne;
+  }
+  
+  return arr.join('\n')
+}
