@@ -39,3 +39,21 @@ function getDivisorsCnt(n){
   return sum;
 }
 
+/**
+ * Squash the bugs
+ * https://www.codewars.com/kata/56f173a35b91399a05000cb7/train/javascript
+ */
+function findLongest(str) {
+  console.log(str)
+  var spl = str.split(" ");
+  console.log(spl)
+  
+  var longest = 0
+  
+  for (var i = 0; i < spl.length; i++) {
+    if (spl[i].length > longest) {
+      longest = spl[i].length
+    }
+  }
+  return longest
+}
