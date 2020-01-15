@@ -4,9 +4,9 @@
  */
 function even_or_odd(number) {
   if(number % 2 === 0)
-  return "Even"
+    return "Even"
   else
-  return "Odd"
+    return "Odd"
 }
 
 /**
@@ -15,8 +15,8 @@ function even_or_odd(number) {
  */
 function positiveSum(arr) {
   let sum = 0;
+
   arr.forEach(num => {
-    console.log(num)
     if(num > 0)
       {sum = sum + num;}
   })
@@ -44,10 +44,7 @@ function getDivisorsCnt(n){
  * https://www.codewars.com/kata/56f173a35b91399a05000cb7/train/javascript
  */
 function findLongest(str) {
-  console.log(str)
   var spl = str.split(" ");
-  console.log(spl)
-  
   var longest = 0
   
   for (var i = 0; i < spl.length; i++) {
