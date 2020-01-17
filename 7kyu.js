@@ -25,18 +25,19 @@ function vertMirror(strng) {
   }
   function horMirror(strng) {
       // Your code
-      
   }
   function oper(fct, s) {
       // Your code
       
       // split the string into an array of strings
       let str = s.split("\n");
+  //     console.log(str);
+  //     console.log(`${str}`);
+      
       let newArr = [];
       
       str.forEach(function(eachStr){
-        // split each string in the index to an array of letters, reverse the array, join it back
-        // to a string and push it to the new array
+  //       console.log(eachStr.split("").reverse().join(""));
         newArr.push(eachStr.split("").reverse().join(""));
       });
       
@@ -45,4 +46,8 @@ function vertMirror(strng) {
       let newnew = newArr.join("\n")
       console.log(newnew)
       return newnew
+      
+      
+  //     if(fct == "vertMirro")
+  //       vertMirror(s)
   }

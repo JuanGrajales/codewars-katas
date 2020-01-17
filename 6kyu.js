@@ -87,7 +87,7 @@ function christmasTree(height) {
   
   
   for(let i = 1; i <= height; i++){
-    console.log(str.padStart(initial) + "".padEnd(initial, " "))
+    // console.log(str.padStart(initial) + "".padEnd(initial, " "))
     if(i+1 > height){
       arr.push(str.padStart(initial))
     }
