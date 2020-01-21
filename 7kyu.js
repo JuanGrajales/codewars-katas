@@ -1,4 +1,20 @@
 /**
+ * Ordered Count of Characters
+ * https://www.codewars.com/kata/57a6633153ba33189e000074/train/javascript
+ */
+var orderedCount = function (text) {
+  let op = {}
+  let values = []
+  for(let i=0;i<text.length;i++){
+    op[text[i]] = op[text[i]] || 0
+    !op[text[i]] && values.push(text[i])
+    op[text[i]]++
+  }
+  return values.map((e,i)=>([e,op[e]]))
+}
+
+
+/**
  * Absent vowel
  * https://www.codewars.com/kata/56414fdc6488ee99db00002c/solutions/javascript/all/clever
  */
