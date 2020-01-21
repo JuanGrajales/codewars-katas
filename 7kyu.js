@@ -14,7 +14,7 @@ function getDivisorsCnt(n){
 }
 
 /**
- * Moves in squared strings (I)
+ * Moves in squared strings (I) INCOMPLETE
  * https://www.codewars.com/kata/56dbe0e313c2f63be4000b25/train/javascript 
  */
 function vertMirror(strng) {
