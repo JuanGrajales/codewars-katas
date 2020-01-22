@@ -1,4 +1,19 @@
 /**
+ * Absent vowel
+ * https://www.codewars.com/kata/56414fdc6488ee99db00002c/solutions/javascript/all/clever
+ */
+function absentVowel(x){
+  switch(-1)
+  {
+    case x.split('').indexOf('a'): return 0;
+    case x.split('').indexOf('e'): return 1;
+    case x.split('').indexOf('i'): return 2;
+    case x.split('').indexOf('o'): return 3;
+    case x.split('').indexOf('u'): return 4;
+  }
+}
+
+/**
  * Count the divisors of a number
  * https://www.codewars.com/kata/542c0f198e077084c0000c2e/train/javascript
  */
@@ -51,3 +66,4 @@ function vertMirror(strng) {
   //     if(fct == "vertMirro")
   //       vertMirror(s)
   }
+
