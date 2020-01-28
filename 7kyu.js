@@ -1,4 +1,19 @@
 /**
+ * Disemvowel Trolls
+ * https://www.codewars.com/kata/52fba66badcd10859f00097e 
+ */
+// Solution 1
+// replace - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace 
+// regular expressions RegExp - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions 
+function disemvowel(str) {
+  let regularExpression = /[aeiou]/gi;
+  console.log("Original string: " + str) 
+  str = str.replace(regularExpression, "");
+  console.log("After using replace: " + str)
+  return str;
+}
+
+/**
  * Ordered Count of Characters
  * https://www.codewars.com/kata/57a6633153ba33189e000074/train/javascript
  */
@@ -12,6 +27,21 @@ var orderedCount = function (text) {
   }
   return values.map((e,i)=>([e,op[e]]))
 }
+
+var orderedCount = function (text) {
+  let obj = {}
+
+  for(let i=0;i<text.length;i++){
+    if(obj[text[i]])
+      obj[text[i]]++
+    else
+      obj[text[i]] = 1;
+  }
+  
+  console.log(obj)
+//   return values.map((e,i)=>([e,op[e]]))
+}
+
 
 
 /**
