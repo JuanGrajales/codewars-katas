@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/546e2562b03326a88e000020
 // Challenge: solve using map
-// Methods: 
+// Methods: toString, join, split, Number, parseInt
 
 
 // Solution 1
@@ -28,6 +28,6 @@ function squareDigits(num){
 function squareDigits(num){
   return Number(('' + num)
   .split('')
-  .map(number => number * number)
+  .map(number => number**2)
   .join('')); 
 }
