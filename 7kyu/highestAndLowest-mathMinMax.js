@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/554b4ac871d6813a03000035
 // Challenge: solve 
-// Methods: split, Math.min, Math.max, sort, for loop
+// Methods: split, Math.min, Math.max, sort, for loop, spread syntax
 
 // Solution 1
 function highAndLow(numbers){
