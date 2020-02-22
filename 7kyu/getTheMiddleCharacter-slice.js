@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/56747fd5cb988479af000028
-// Challenge: solve using substr
+// Challenge: solve using slice
 // Methods: substr, charAt, slice
 
 // Solution 1
