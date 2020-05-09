@@ -1,4 +1,7 @@
 // https://www.codewars.com/kata/5721a78c283129e416000999/train/javascript
+// Prereqs: arrays, for loops, variables, functions
+// Challenge: solve using a for loop
+// Methods: forEach
 
 // Solution 1
 function pickIt(arr){
