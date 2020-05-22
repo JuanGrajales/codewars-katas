@@ -1,5 +1,4 @@
 // https://www.codewars.com/kata/5709bdd2f088096786000008
-// Prereqs: arrays, loops, variables, functions
 // Challenge: solve using sort
 // Methods: Array.from, sort, join, reverse, split, toString, parseInt
 
