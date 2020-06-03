@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/546e2562b03326a88e000020
+// https://www.codewars.com/kata/52fba66badcd10859f00097e/javascript
 // Challenge: solve using regex
 // Methods: indexOf, charAt, toLowerCase, split, filter, join, replace
 
