@@ -22,3 +22,7 @@ ex3:
   we took 3 steps to get to 1 so we return 3 
   ** Numbers passed can be up to 1,000,000
 */
+
+const steps = (number) => {
+
+}
