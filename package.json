@@ -1,0 +1,21 @@
+{
+  "name": "katas",
+  "version": "1.0.0",
+  "description": "This a collection of all the coding challenges I have completed in Codewars",
+  "main": "array-diff-arrays-filter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "git add . && git commit -m 'new kata' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanGrajales/codewars-katas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanGrajales/codewars-katas/issues"
+  },
+  "homepage": "https://github.com/JuanGrajales/codewars-katas#readme"
+}
