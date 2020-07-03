@@ -3,16 +3,30 @@
 // Methods: parseInt, Number, String, toString split, reverse, join
 
 // Solution 1
-function descendingOrder(n){
-  return Number(String(n).split('').sort().reverse().join(''))
+function descendingOrder(n) {
+  return Number(String(n).split("").sort().reverse().join(""));
 }
 
 // Solution 2
-function descendingOrder(n){
-  return parseInt(n.toString().split('').sort().reverse().join(''))
+function descendingOrder(n) {
+  return parseInt(n.toString().split("").sort().reverse().join(""));
 }
 
 // Solution 3
 const descendingOrder = (n) => {
-  return Number(String(n).split('').sort((a,b) => b - a).join(''))
-}
+  return Number(
+    String(n)
+      .split("")
+      .sort((a, b) => b - a)
+      .join("")
+  );
+};
+
+// Solution 4
+const descendingOrder = (n) =>
+  Number(
+    String(n)
+      .split("")
+      .sort((a, b) => b - a)
+      .join("")
+  );
