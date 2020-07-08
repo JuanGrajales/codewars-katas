@@ -12,3 +12,9 @@ function cleanString(s) {
 // Solution 2
 clean_string = (s) =>
   s.split("").reduce((r, e) => (e == "#" ? r.slice(0, -1) : r + e), "");
+
+// Solution  3
+function clean_string(string) {
+  while (string.indexOf("#") >= 0) string = string.replace(/(^|[^#])#/g, "");
+  return string;
+}
