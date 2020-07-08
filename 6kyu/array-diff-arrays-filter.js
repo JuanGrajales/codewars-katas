@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/523f5d21c841566fde000009/javascript
 // Challenge: solve with filter
-// Methods:
+// Methods: includes, not operator
 
 // Solution 1
 function arrayDiff(a, b) {
