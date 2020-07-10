@@ -36,3 +36,23 @@ function decode(r) {
     .map((v, i, a) => letters[codes.indexOf(v)])
     .join("");
 }
+
+// Solution 3
+function decode(r) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+  let result = "";
+  const number = +r.replace(/[a-z]/g, "");
+  const letters = r.replace(/[\d]/g, "");
+  [...letters].forEach((char) => {
+    const index = alphabet.indexOf(char);
+    for (let i = 0; i < 26; i++) {
+      if ((i * number) % 26 === index) {
+        result += alphabet[i];
+      }
+    }
+  });
+  if (result.length !== letters.length) {
+    return "Impossible to decode";
+  }
+  return result;
+}
